@@ -3,18 +3,18 @@ import About from './components/About';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import NavigationBar from '/components/Navigation';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
       <Routes>
-        <Route exact path="/" element={<Home />}/>
-        <Route exact path="/home" element={<Home />}/>
-        <Route exact path="/about" element={<About />}/>
-        <Route exact path="/portfolio" element={<Portfolio />}/>
-        <Route exact path="/contact-us" element={<Contact />}/>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/contact-us" element={<Contact />} />
       </Routes>
     </div>
   );
